@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="283.9512718749975" prefWidth="684.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.DeleteEmployeeController">
+  <children>
+    <Label layoutX="207.0" layoutY="14.0" prefWidth="270.0" text=" Search And Delete Employees ">
+      <font>
+        <Font name="System Bold" size="18.5" />
+      </font>
+    </Label>
+    <TextField id="searchProductTxt" fx:id="employeeNameTxt" layoutX="50.0" layoutY="106.0" prefWidth="372.0" promptText="e.g., Hamza or E001" />
+    <Label layoutX="50.0" layoutY="78.0" text="Search Employee by Name or ID">
+      <font>
+        <Font name="System Bold" size="15.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Button fx:id="searchBtnID" layoutX="439.0" layoutY="105.0" mnemonicParsing="false" onAction="#searchBtn" text="Search" />
+    <Label font="$x1" layoutX="50.0" layoutY="156.0" text="Result:" />
+    <Label id="resultLabel" fx:id="resultLBL" font="$x1" layoutX="50.0" layoutY="180.0" prefWidth="513.0" text="" />
+    <Button fx:id="closeBtnID" layoutX="584.0" layoutY="230.0" mnemonicParsing="false" onAction="#closeBtn" text="Close" />
+    <Button fx:id="deleteBtnID" layoutX="50.0" layoutY="230.0" mnemonicParsing="false" onAction="#deleteBtn" text="Delete" />
+  </children>
+</AnchorPane>

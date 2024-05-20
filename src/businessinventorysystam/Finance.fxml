@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="917.0000999999975" prefWidth="1476.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.FinanceController">
+  <children>
+    <Label layoutX="672.0" layoutY="14.0" text="Finance">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+    <Pane layoutX="30.0" layoutY="68.0" prefHeight="363.0" prefWidth="412.0">
+      <children>
+        <Line endX="313.0" endY="-1.0" layoutX="101.0" layoutY="1.0" startX="-101.0" startY="-1.0" />
+        <Line endX="313.0" endY="0.0" layoutX="101.0" layoutY="363.0" startX="-100.0" />
+        <Line endX="-204.0" endY="-37.0" layoutX="618.0" layoutY="402.0" startX="-205.0" startY="-401.0" />
+        <Line endX="-129.0" endY="155.0" layoutX="129.0" layoutY="209.0" startX="-130.0" startY="-209.0" />
+        <Label layoutX="14.0" layoutY="14.0" text="Business Account">
+          <font>
+            <Font name="System Bold" size="18.0" fx:id="x2" />
+          </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="70.0" text="Business Budget This Month:">
+          <font>
+            <Font size="18.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label fx:id="BusinessBudgetLeftThisMonthLbl" layoutX="275.0" layoutY="72.0" prefHeight="23.94140625" prefWidth="59.0" text="" />
+        <Label font="$x1" layoutX="14.0" layoutY="109.0" text="Business Budget Left:" />
+        <Label fx:id="BusinessBudgetLeftLbl" layoutX="206.0" layoutY="111.0" prefHeight="23.94140625" prefWidth="59.0" text="" />
+        <Label font="$x1" layoutX="14.0" layoutY="170.0" text="Business Budget Analyser" />
+        <ProgressBar fx:id="businessBudgetAnalyserBar" layoutX="16.0" layoutY="207.0" prefHeight="32.94140625" prefWidth="282.0" progress="0.0" />
+        <Label fx:id="businessBudgetAnalyserPercentageLbl" layoutX="305.0" layoutY="212.0" prefHeight="23.94140625" prefWidth="92.0" text="" />
+        <Button id="downalodReportBusinessAccBtn" fx:id="downalodReportBusinessAccBtnID" layoutX="228.0" layoutY="322.0" mnemonicParsing="false" onAction="#downalodReportBusinessAccBtn" text="Download Full Report" />
+      </children>
+    </Pane>
+    <Pane layoutX="30.0" layoutY="471.0" prefHeight="363.0" prefWidth="412.0">
+      <children>
+        <Line endX="313.0" endY="-1.0" layoutX="101.0" layoutY="1.0" startX="-101.0" startY="-1.0" />
+        <Line endX="313.0" endY="0.0" layoutX="101.0" layoutY="363.0" startX="-100.0" />
+        <Line endX="-204.0" endY="-37.0" layoutX="618.0" layoutY="402.0" startX="-205.0" startY="-401.0" />
+        <Line endX="-129.0" endY="155.0" layoutX="129.0" layoutY="209.0" startX="-130.0" startY="-209.0" />
+        <Label font="$x2" layoutX="14.0" layoutY="14.0" text="Profit &amp; Loss" />
+        <Label font="$x1" layoutX="14.0" layoutY="69.0" text="Net Income This Month:" />
+        <Label fx:id="netIncomeMonthlyLbl" layoutX="225.0" layoutY="69.0" prefHeight="23.94140625" prefWidth="59.0" text="" />
+        <Label font="$x1" layoutX="14.0" layoutY="132.0" text="Income" />
+        <ProgressBar fx:id="incomeBar" layoutX="14.0" layoutY="165.0" prefHeight="32.94140625" prefWidth="282.0" progress="0.0" />
+        <Label font="$x1" layoutX="14.0" layoutY="229.0" text="Loss" />
+        <ProgressBar fx:id="lossBar" layoutX="14.0" layoutY="262.0" prefHeight="32.94140625" prefWidth="282.0" progress="0.0" />
+        <Label fx:id="incomeUsedLbl" layoutX="306.0" layoutY="171.0" prefHeight="23.94140625" prefWidth="92.0" text="" />
+        <Label id="loss" fx:id="lossUsedLbl" layoutX="306.0" layoutY="271.0" prefHeight="23.94140625" prefWidth="92.0" text="" />
+        <Button id="profitLossDownloadReportBtn" fx:id="profitLossDownloadReportBtnID" layoutX="228.0" layoutY="322.0" mnemonicParsing="false" onAction="#profitLossDownloadReportBtn" text="Download Full Report" />
+      </children>
+    </Pane>
+    <Pane layoutX="520.0" layoutY="68.0" prefHeight="363.0" prefWidth="412.0">
+      <children>
+        <Line endX="313.0" endY="-1.0" layoutX="101.0" layoutY="1.0" startX="-101.0" startY="-1.0" />
+        <Line endX="313.0" endY="0.0" layoutX="101.0" layoutY="363.0" startX="-100.0" />
+        <Line endX="-204.0" endY="-37.0" layoutX="618.0" layoutY="402.0" startX="-205.0" startY="-401.0" />
+        <Line endX="-129.0" endY="155.0" layoutX="129.0" layoutY="209.0" startX="-130.0" startY="-209.0" />
+        <Label font="$x2" layoutX="14.0" layoutY="14.0" text="Expenses" />
+        <PieChart id="PieChart" fx:id="expensesPieChart" layoutX="14.0" layoutY="50.0" prefHeight="247.0" prefWidth="246.00009999999747" />
+        <Button id="expensesDownloadReportBtn" fx:id="expensesDownloadReportBtnID" layoutX="228.0" layoutY="322.0" mnemonicParsing="false" onAction="#expensesDownloadReportBtn" text="Download Full Report" />
+        <Label layoutX="273.0" layoutY="40.0" text="Expenses" />
+        <ListView fx:id="expensesListView" layoutX="273.0" layoutY="68.0" prefHeight="229.0" prefWidth="125.0" />
+      </children>
+    </Pane>
+    <Pane layoutX="520.0" layoutY="470.0" prefHeight="363.0" prefWidth="412.0">
+      <children>
+        <Line endX="313.0" endY="-1.0" layoutX="101.0" layoutY="1.0" startX="-101.0" startY="-1.0" />
+        <Line endX="313.0" endY="0.0" layoutX="101.0" layoutY="363.0" startX="-100.0" />
+        <Line endX="-204.0" endY="-37.0" layoutX="618.0" layoutY="402.0" startX="-205.0" startY="-401.0" />
+        <Line endX="-129.0" endY="155.0" layoutX="129.0" layoutY="209.0" startX="-130.0" startY="-209.0" />
+        <Label font="$x2" layoutX="14.0" layoutY="14.0" text="Balance" />
+        <Label layoutX="14.0" layoutY="52.0" text="Total Current Assets -" />
+        <Label layoutX="14.0" layoutY="77.0" text="Total Non-Current Assets -" />
+        <Label layoutX="14.0" layoutY="105.0" text="Total Assets -" />
+        <Label layoutX="14.0" layoutY="152.0" text="Total Current Liabilities -" />
+        <Label layoutX="14.0" layoutY="178.0" text="Total Non-Current Liabilities -" />
+        <Label layoutX="14.0" layoutY="203.0" text="Total Liabilities -" />
+        <Label layoutX="14.0" layoutY="245.0" text="Equity" />
+        <Label layoutX="14.0" layoutY="269.0" text="Owner Capital -" />
+        <Label layoutX="14.0" layoutY="292.0" text="Sales Earnings -" />
+        <Label layoutX="14.0" layoutY="317.0" text="Total Money Made -" />
+        <Button id="balanceDownloadFullReportBtn" fx:id="balanceDownloadFullReportBtnID" layoutX="228.0" layoutY="322.0" mnemonicParsing="false" onAction="#balanceDownloadFullReportBtn" text="Download Full Report" />
+        <Label id="balanceTotalAssetsLbl" fx:id="balanceTotalCurrentAssetsLbl" layoutX="171.0" layoutY="52.0" prefWidth="104.0" text="" />
+        <Label fx:id="balanceTotalNonCurrentAssetsLbl" layoutX="206.0" layoutY="77.0" prefWidth="104.0" text="" />
+        <Label fx:id="balanceTotalAssetsLbl" layoutX="107.0" layoutY="105.0" prefWidth="104.0" text="" />
+        <Label fx:id="totalCurrentLiabLbl" layoutX="183.0" layoutY="152.0" prefWidth="104.0" text="" />
+        <Label fx:id="totalNonCurrentLiabLbl" layoutX="211.0" layoutY="178.0" prefWidth="104.0" text="" />
+        <Label fx:id="totalLiabLbl" layoutX="124.0" layoutY="203.0" prefWidth="104.0" text="" />
+        <Label fx:id="ownerCapitalLbl" layoutX="123.0" layoutY="269.0" prefWidth="104.0" text="" />
+        <Label fx:id="salesEarningLbl" layoutX="123.0" layoutY="292.0" prefWidth="104.0" text="" />
+        <Label fx:id="totalMoneyMadeLbl" layoutX="159.0" layoutY="317.0" prefWidth="47.0" text="" />
+      </children>
+    </Pane>
+    <Pane layoutX="1013.0" layoutY="69.0" prefHeight="363.0" prefWidth="412.0">
+      <children>
+        <Line endX="313.0" endY="-1.0" layoutX="101.0" layoutY="1.0" startX="-101.0" startY="-1.0" />
+        <Line endX="313.0" endY="0.0" layoutX="101.0" layoutY="363.0" startX="-100.0" />
+        <Line endX="-204.0" endY="-37.0" layoutX="618.0" layoutY="402.0" startX="-205.0" startY="-401.0" />
+        <Line endX="-129.0" endY="155.0" layoutX="129.0" layoutY="209.0" startX="-130.0" startY="-209.0" />
+        <Label font="$x2" layoutX="14.0" layoutY="14.0" text="Sales" />
+        <LineChart id="LineChart" fx:id="salesLineGraph" layoutX="43.0" layoutY="64.0" prefHeight="208.0" prefWidth="333.0">
+          <xAxis>
+            <CategoryAxis side="BOTTOM" />
+          </xAxis>
+          <yAxis>
+            <NumberAxis side="LEFT" />
+          </yAxis>
+        </LineChart>
+        <Label layoutX="14.0" layoutY="278.0" text="Sales" />
+        <Label fx:id="salesMadeLbl" layoutX="14.0" layoutY="306.0" prefHeight="26.951171875" prefWidth="77.0" text="" />
+        <Button fx:id="downloadSalesReportBtnID" layoutX="228.0" layoutY="322.0" mnemonicParsing="false" onAction="#downloadSalesReportBtn" text="Download Full Report" />
+      </children>
+    </Pane>
+    <Pane layoutX="1013.0" layoutY="471.0" prefHeight="363.0" prefWidth="412.0">
+      <children>
+        <Line endX="313.0" endY="-1.0" layoutX="101.0" layoutY="1.0" startX="-101.0" startY="-1.0" />
+        <Line endX="313.0" endY="0.0" layoutX="101.0" layoutY="363.0" startX="-100.0" />
+        <Line endX="-204.0" endY="-37.0" layoutX="618.0" layoutY="402.0" startX="-205.0" startY="-401.0" />
+        <Line endX="-129.0" endY="155.0" layoutX="129.0" layoutY="209.0" startX="-130.0" startY="-209.0" />
+        <Label font="$x2" layoutX="14.0" layoutY="14.0" text="Cash Flow" />
+        <Label layoutX="18.0" layoutY="48.0" text="Cash Inflow" />
+        <Label layoutX="18.0" layoutY="189.0" text="Cash Outflow" />
+        <Label layoutX="18.0" layoutY="329.0" text="Ending Cash Balance -" />
+        <ListView id="cashFllowListView" fx:id="cashInflowListView" layoutX="18.0" layoutY="76.0" prefHeight="106.0" prefWidth="113.0" />
+        <ListView fx:id="cashOutflowListView" layoutX="18.0" layoutY="213.0" prefHeight="106.0" prefWidth="113.0" />
+        <Button fx:id="cashFlowDownloadReportBtnID" layoutX="228.0" layoutY="322.0" mnemonicParsing="false" onAction="#cashFlowDownloadReportBtn" text="Download Full Report" />
+        <Label fx:id="endCashBalanceID" layoutX="173.0" layoutY="329.0" prefWidth="47.000099999997474" text="" />
+      </children>
+    </Pane>
+    <Button fx:id="backBtnID" layoutX="1371.0" layoutY="876.0" mnemonicParsing="false" onAction="#backBtn" text="Back" />
+  </children>
+</AnchorPane>

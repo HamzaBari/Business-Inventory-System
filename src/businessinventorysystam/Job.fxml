@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="597.0" prefWidth="482.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.JobController">
+  <children>
+    <Label layoutX="218.0" layoutY="14.0" text="Jobs">
+      <font>
+        <Font name="System Bold" size="22.0" />
+      </font>
+    </Label>
+    <Label layoutX="211.0" layoutY="99.0" text="Job ID">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="194.0" layoutY="185.0" text="Job Name" />
+    <Label font="$x1" layoutX="168.0" layoutY="275.0" text="Job Description" />
+    <TextField fx:id="jobIDTxt" layoutX="176.0" layoutY="126.0" prefHeight="30.0" prefWidth="131.0" promptText="E.g., 1" />
+    <TextField fx:id="jobNameTxt" layoutX="153.0" layoutY="212.0" prefHeight="30.0" prefWidth="178.0" promptText="E.g., Manager" />
+    <TextArea fx:id="jobDescriptionTxt" layoutX="109.0" layoutY="315.0" prefHeight="164.0" prefWidth="273.0" promptText="E.g., Managing the Essex Warehouse" wrapText="true" />
+    <Button fx:id="saveBtnID" layoutX="210.0" layoutY="487.0" mnemonicParsing="false" onAction="#saveBtn" text="Save" />
+    <Button fx:id="searchDeleteBtnID" layoutX="14.0" layoutY="556.0" mnemonicParsing="false" onAction="#searchDeleteBtn" text="Search &amp; Delete" />
+    <Button fx:id="backBtnID" layoutX="411.0" layoutY="556.0" mnemonicParsing="false" onAction="#backBtn" text="Back" />
+  </children>
+</AnchorPane>
