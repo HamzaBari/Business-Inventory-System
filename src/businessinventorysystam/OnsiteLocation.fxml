@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="458.0" prefWidth="413.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.OnsiteLocationController">
+  <children>
+    <Label layoutX="97.0" layoutY="14.0" text="Onsite Location">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+    <Button fx:id="addProductsID" layoutX="138.0" layoutY="120.0" mnemonicParsing="false" onAction="#addProductsBtn" prefHeight="40.0" text="Add To Products" />
+    <Button fx:id="goToOnsiteLID" layoutX="138.0" layoutY="189.0" mnemonicParsing="false" onAction="#goToOnsiteLBtn" prefHeight="40.0" prefWidth="137.0" text="Go To Onsite" />
+    <Button fx:id="mainMenuID" layoutX="224.0" layoutY="388.0" mnemonicParsing="false" onAction="#mainMenuBtn" prefHeight="40.0" prefWidth="164.0" text="Go To Main Menu" />
+  </children>
+</AnchorPane>
