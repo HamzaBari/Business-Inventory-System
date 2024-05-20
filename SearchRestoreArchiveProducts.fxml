@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="645.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.SearchRestoreArchiveProductsController">
+  <children>
+    <Label layoutX="197.0" layoutY="14.0" text="Search &amp; Restore Products">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Label>
+    <Button fx:id="closeBtnID" layoutX="569.0" layoutY="16.0" mnemonicParsing="false" onAction="#closeBtn" text="Close" />
+    <Label layoutX="51.0" layoutY="89.0" text="Search a Product by their name">
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField fx:id="searchTxt" layoutX="51.0" layoutY="121.0" prefWidth="383.0" promptText="e.g., Glass" />
+    <Button fx:id="searchBtnID" layoutX="441.0" layoutY="120.0" mnemonicParsing="false" onAction="#searchBtn" text="Search" />
+    <Label font="$x1" layoutX="51.0" layoutY="164.0" text="Result:" />
+    <Label fx:id="resultLbl" font="$x1" layoutX="51.0" layoutY="196.0" prefWidth="525.0" text="" />
+    <Label layoutX="51.0" layoutY="228.0" text="Locate Product e.g., Select only one option from each section">
+      <font>
+        <Font name="System Bold" size="15.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Button id="restoreBtnID" fx:id="restoreWarehouseBtnID" layoutX="26.0" layoutY="511.0" mnemonicParsing="false" onAction="#restoreWarehouseBtnID" prefWidth="251.0" text="Restore Product Warehouse" />
+    <Label font="$x2" layoutX="51.0" layoutY="270.0" text="Warehouse" />
+    <Label font="$x2" layoutX="416.0" layoutY="270.0" text="Onsite" />
+    <ComboBox fx:id="onsiteRowCB" layoutX="416.0" layoutY="388.0" prefWidth="160.0" promptText="Row 1 - 12">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="onsiteShelfCB" layoutX="416.0" layoutY="432.0" prefWidth="160.0" promptText="Shelf No 1 - 10">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Button id="restoreBtnID" fx:id="restoreOnsiteBtn" layoutX="358.0" layoutY="511.0" mnemonicParsing="false" onAction="#restoreOnsiteBtn" prefWidth="251.0" text="Restore Product Onsite" />
+    <TextField fx:id="onsiteProductQty" layoutX="416.0" layoutY="467.0" prefWidth="160.00009999999747" promptText="Product Qty" />
+    <TextField fx:id="onsiteLocationTxt" layoutX="416.0" layoutY="349.0" prefWidth="160.00009999999747" text="Shop" />
+    <ComboBox fx:id="warehouseLocationCB" layoutX="51.0" layoutY="349.0" prefWidth="188.0" promptText="Warehouse Location">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="warehouseShelfNoCB" layoutX="51.0" layoutY="388.0" prefWidth="188.0" promptText="Shelf No A - H">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="warehouseRowNoCB" layoutX="51.0" layoutY="432.0" prefWidth="188.0" promptText="Row 1 - 12">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <TextField fx:id="productWQty" layoutX="51.0" layoutY="467.0" prefWidth="188.0" promptText="Product Qty" />
+    <TextField fx:id="productWName" layoutX="51.0" layoutY="303.0" prefWidth="188.0" promptText="Product Name" />
+    <TextField fx:id="productOName" layoutX="418.0" layoutY="303.0" prefWidth="188.0" promptText="Product Name" />
+  </children>
+</AnchorPane>
