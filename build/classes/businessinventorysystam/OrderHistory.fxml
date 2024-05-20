@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane prefHeight="523.0" prefWidth="735.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.OrderHistoryController">
+  <content>
+    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="523.0" prefWidth="734.0">
+      <children>
+        <Label layoutX="303.0" layoutY="14.0" text="Order History">
+          <font>
+            <Font name="System Bold" size="20.0" />
+          </font>
+        </Label>
+        <Button fx:id="searchBtnID" layoutX="611.0" layoutY="387.0" mnemonicParsing="false" onAction="#searchBtn" prefWidth="71.0" text="Search" />
+        <Button fx:id="backBtnID" layoutX="611.0" layoutY="460.0" mnemonicParsing="false" onAction="#backBtn" prefWidth="71.0" text="Back" />
+        <Label layoutX="491.0" layoutY="349.0" text="Search for detailed invoice:">
+          <font>
+            <Font size="16.0" />
+          </font>
+        </Label>
+        <ListView fx:id="ordersListDataLbl" layoutX="32.0" layoutY="54.0" prefHeight="433.0" prefWidth="343.0" />
+      </children>
+    </AnchorPane>
+  </content>
+</ScrollPane>

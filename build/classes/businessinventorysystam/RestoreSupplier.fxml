@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" prefHeight="570.0" prefWidth="636.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.RestoreSupplierController">
+  <children>
+    <Label layoutX="48.0" layoutY="14.0" text="Restore Suppliers">
+      <font>
+        <Font name="System Bold" size="22.0" />
+      </font>
+    </Label>
+    <Label layoutX="48.0" layoutY="70.0" text="Search Suppliers by their name ">
+      <font>
+        <Font size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField fx:id="searchSuppliersTxt" layoutX="48.0" layoutY="101.0" prefWidth="370.0" promptText="Search Suppliers by their name or type" />
+    <Button id="searchSuppliersBtn" fx:id="searchSuppliersBtnID" layoutX="426.0" layoutY="101.0" mnemonicParsing="false" onAction="#searchSuppliersBtn" prefWidth="84.0" text="Search" />
+    <Label layoutX="48.0" layoutY="143.0" text="Result:">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Label>
+    <Label fx:id="resultLbl" font="$x1" layoutX="48.0" layoutY="167.0" prefWidth="548.0" text="" />
+    <Button id="closeBtnId" fx:id="closeBtnID" layoutX="538.0" layoutY="211.0" mnemonicParsing="false" onAction="#closeBtn" prefWidth="84.0" text="Close" />
+    <Button id="searchSuppliersBtn" fx:id="restoreSupplierBtnID" layoutX="48.0" layoutY="203.0" mnemonicParsing="false" onAction="#restoreSupplierBtn" prefWidth="84.0" text="Restore" />
+  </children>
+</AnchorPane>
