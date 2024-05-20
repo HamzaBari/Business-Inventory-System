@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="windowSize" layoutX="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="750.0" snapToPixel="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.HelpGuideController">
+  <children>
+    <Label layoutX="301.0" layoutY="20.0" text="Help Guide">
+      <font>
+        <Font name="Calibri Bold" size="32.0" />
+      </font>
+    </Label>
+    <Label layoutX="250.0" layoutY="80.0" prefHeight="85.0" prefWidth="250.0" text="This is a small written documentation which show simple instructions, for the people who are new to this applciation." textAlignment="CENTER" wrapText="true" />
+    <Label layoutX="49.0" layoutY="188.0" prefHeight="160.0" prefWidth="652.0" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." textAlignment="LEFT" wrapText="true" />
+    <Label layoutX="49.0" layoutY="375.0" prefHeight="160.0" prefWidth="652.0" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." textAlignment="LEFT" wrapText="true" />
+    <Label id="btnMainMenuID" layoutX="49.0" layoutY="555.0" prefHeight="160.0" prefWidth="652.0" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." textAlignment="LEFT" wrapText="true" />
+    <Button fx:id="btnMainMenuID" layoutX="644.0" layoutY="735.0" mnemonicParsing="false" onAction="#btnMainMenu" prefHeight="31.0" prefWidth="87.0" text="Back" />
+  </children>
+</AnchorPane>

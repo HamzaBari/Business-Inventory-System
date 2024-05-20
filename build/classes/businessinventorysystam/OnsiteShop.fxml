@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane prefHeight="1758.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.OnsiteShopController">
+  <content>
+    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="1758.0" prefWidth="1199.0">
+      <children>
+        <Label layoutX="546.0" layoutY="14.0" text="Onsite">
+          <font>
+            <Font name="System Bold" size="30.0" />
+          </font>
+        </Label>
+        <Label layoutX="56.0" layoutY="76.0" text="Row 1">
+          <font>
+            <Font name="System Bold" size="20.0" fx:id="x1" />
+          </font>
+        </Label>
+        <TableView id="shelfATbl" fx:id="Row1Tbl" layoutX="55.0" layoutY="111.0" prefHeight="27.0" prefWidth="419.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="197.0" text="Product Name" fx:id="row1ProductNameCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Product Qty" fx:id="row1ProductQtyCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="Shelf Number" fx:id="row1ShelfNoCol" />
+          </columns>
+        </TableView>
+        <Label font="$x1" layoutX="56.0" layoutY="329.0" text="Row 3" />
+        <Label font="$x1" layoutX="56.0" layoutY="582.0" text="Row 5" />
+        <Label font="$x1" layoutX="55.0" layoutY="836.0" text="Row 7" />
+        <Label font="$x1" layoutX="694.0" layoutY="76.0" text="Row 2" />
+        <Label font="$x1" layoutX="694.0" layoutY="329.0" text="Row 4" />
+        <Label font="$x1" layoutX="694.0" layoutY="582.0" text="Row 6" />
+        <Label font="$x1" layoutX="694.0" layoutY="841.0" text="Row 8" />
+        <Label layoutX="56.0" layoutY="1641.0" prefHeight="40.0" prefWidth="419.0" text="Click Here to Search, Reduce, or Delete a Product" wrapText="true">
+          <font>
+            <Font name="System Bold" size="18.0" />
+          </font>
+        </Label>
+        <Button fx:id="searchBtnID" layoutX="56.0" layoutY="1695.0" mnemonicParsing="false" onAction="#searchBtn" text="Search" />
+        <Button fx:id="backBtnID" layoutX="1080.0" layoutY="1695.0" mnemonicParsing="false" onAction="#backBtn" text="Back" />
+        <TableView id="shelfATbl" fx:id="Row2Tbl" layoutX="689.0" layoutY="111.0" prefHeight="27.0" prefWidth="419.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="197.0" text="Product Name" fx:id="row2ProductNameCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Product Qty" fx:id="row2ProductQtyCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="Shelf Number" fx:id="row2ShelfNoCol" />
+          </columns>
+        </TableView>
+        <TableView id="shelfATbl" fx:id="Row3Tbl" layoutX="55.0" layoutY="365.0" prefHeight="27.0" prefWidth="419.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="197.0" text="Product Name" fx:id="row3ProductNameCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Product Qty" fx:id="row3ProductQtyCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="Shelf Number" fx:id="row3ShelfNoCol" />
+          </columns>
+        </TableView>
+        <TableView id="shelfATbl" fx:id="Row4Tbl" layoutX="694.0" layoutY="365.0" prefHeight="27.0" prefWidth="419.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="197.0" text="Product Name" fx:id="row4ProductNameCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Product Qty" fx:id="row4ProductQtyCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="Shelf Number" fx:id="row4ShelfNoCol" />
+          </columns>
+        </TableView>
+        <TableView id="shelfATbl" fx:id="Row5Tbl" layoutX="55.0" layoutY="617.0" prefHeight="27.0" prefWidth="419.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="197.0" text="Product Name" fx:id="row5ProductNameCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Product Qty" fx:id="row5ProductQtyCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="Shelf Number" fx:id="row5ShelfNoCol" />
+          </columns>
+        </TableView>
+        <TableView id="shelfATbl" fx:id="Row6Tbl" layoutX="694.0" layoutY="617.0" prefHeight="27.0" prefWidth="419.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="197.0" text="Product Name" fx:id="row6ProductNameCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Product Qty" fx:id="row6ProductQtyCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="Shelf Number" fx:id="row6ShelfNoCol" />
+          </columns>
+        </TableView>
+        <TableView id="shelfATbl" fx:id="Row7Tbl" layoutX="56.0" layoutY="868.0" prefHeight="27.0" prefWidth="419.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="197.0" text="Product Name" fx:id="row7ProductNameCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Product Qty" fx:id="row7ProductQtyCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="Shelf Number" fx:id="row7ShelfNoCol" />
+          </columns>
+        </TableView>
+        <TableView id="shelfATbl" fx:id="Row8Tbl" layoutX="694.0" layoutY="878.0" prefHeight="27.0" prefWidth="419.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="197.0" text="Product Name" fx:id="row8ProductNameCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Product Qty" fx:id="row8ProductQtyCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="Shelf Number" fx:id="row8ShelfNoCol" />
+          </columns>
+        </TableView>
+        <Label font="$x1" layoutX="54.0" layoutY="1101.0" text="Row 9" />
+        <TableView id="shelfATbl" fx:id="Row9Tbl" layoutX="55.0" layoutY="1133.0" prefHeight="27.0" prefWidth="419.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="197.0" text="Product Name" fx:id="row9ProductNameCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Product Qty" fx:id="row9ProductQtyCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="Shelf Number" fx:id="row9ShelfNoCol" />
+          </columns>
+        </TableView>
+        <Label font="$x1" layoutX="693.0" layoutY="1101.0" text="Row 10" />
+        <TableView id="shelfATbl" fx:id="Row10Tbl" layoutX="694.0" layoutY="1133.0" prefHeight="27.0" prefWidth="419.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="197.0" text="Product Name" fx:id="row10ProductNameCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Product Qty" fx:id="row10ProductQtyCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="Shelf Number" fx:id="row10ShelfNoCol" />
+          </columns>
+        </TableView>
+        <Label font="$x1" layoutX="55.0" layoutY="1368.0" text="Row 11" />
+        <TableView id="shelfATbl" fx:id="Row11Tbl" layoutX="56.0" layoutY="1400.0" prefHeight="27.0" prefWidth="419.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="197.0" text="Product Name" fx:id="row11ProductNameCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Product Qty" fx:id="row11ProductQtyCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="Shelf Number" fx:id="row11ShelfNoCol" />
+          </columns>
+        </TableView>
+        <Label font="$x1" layoutX="694.0" layoutY="1368.0" text="Row 12" />
+        <TableView id="shelfATbl" fx:id="Row12Tbl" layoutX="695.0" layoutY="1400.0" prefHeight="27.0" prefWidth="419.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="197.0" text="Product Name" fx:id="row12ProductNameCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Product Qty" fx:id="row12ProductQtyCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="Shelf Number" fx:id="row12ShelfNoCol" />
+          </columns>
+        </TableView>
+        <ListView id="row1" fx:id="row1LV" layoutX="55.0" layoutY="138.0" prefHeight="173.0" prefWidth="419.0" />
+        <ListView fx:id="row2LV" layoutX="689.0" layoutY="138.0" prefHeight="173.0" prefWidth="419.0" />
+        <ListView fx:id="row3LV" layoutX="54.0" layoutY="392.0" prefHeight="173.0" prefWidth="419.0" />
+        <ListView fx:id="row4LV" layoutX="694.0" layoutY="392.0" prefHeight="173.0" prefWidth="419.0" />
+        <ListView fx:id="row5LV" layoutX="54.0" layoutY="644.0" prefHeight="173.0" prefWidth="419.0" />
+        <ListView fx:id="row6LV" layoutX="695.0" layoutY="644.0" prefHeight="173.0" prefWidth="419.0" />
+        <ListView fx:id="row7LV" layoutX="56.0" layoutY="895.0" prefHeight="173.0" prefWidth="419.0" />
+        <ListView fx:id="row8LV" layoutX="695.0" layoutY="905.0" prefHeight="173.0" prefWidth="419.0" />
+        <ListView fx:id="row9LV" layoutX="54.0" layoutY="1160.0" prefHeight="173.0" prefWidth="419.0" />
+        <ListView fx:id="row10LV" layoutX="695.0" layoutY="1160.0" prefHeight="173.0" prefWidth="419.0" />
+        <ListView fx:id="row11LV" layoutX="56.0" layoutY="1427.0" prefHeight="173.0" prefWidth="419.0" />
+        <ListView fx:id="row12LV" layoutX="695.0" layoutY="1427.0" prefHeight="173.0" prefWidth="419.0" />
+      </children>
+    </AnchorPane>
+  </content>
+</ScrollPane>
