@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fx:id="scrollPane" hbarPolicy="AS_NEEDED" hmax="0.0" hmin="0.0" hvalue="500.0" mouseTransparent="false" pannable="true" prefHeight="899.0" prefWidth="1430.0" vbarPolicy="ALWAYS" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.SuppliersController">
+  <content>
+    <AnchorPane id="Content" fx:id="AnchorPane" minHeight="0.0" minWidth="0.0" onDragDetected="#drag" prefHeight="899.0" prefWidth="1430.0">
+      <children>
+        <Label layoutX="583.0" layoutY="8.0" text="Suppliers" textAlignment="CENTER">
+          <font>
+            <Font name="System Bold" size="24.0" />
+          </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="54.0" text="Add Suppliers" textAlignment="CENTER">
+          <font>
+            <Font name="System Bold" size="20.0" fx:id="x2" />
+          </font>
+        </Label>
+        <Label layoutX="169.0" layoutY="90.0" text="Supplier Name" textAlignment="CENTER">
+          <font>
+            <Font size="18.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="393.0" layoutY="90.0" text="Supplier Type" textAlignment="CENTER" />
+        <Label font="$x1" layoutX="615.0" layoutY="90.0" text="Supplier Address" textAlignment="CENTER" />
+        <Label font="$x1" layoutX="838.0" layoutY="90.0" text="Supplier Phonenumber" textAlignment="CENTER" />
+        <Label font="$x1" layoutX="1066.0" layoutY="90.0" text="Supplier Email" textAlignment="CENTER" />
+        <TextField id="supplierNameID" fx:id="supplierNametxt" layoutX="168.0" layoutY="123.0" prefWidth="200.0" promptText="Enter Supplier Name" />
+        <ComboBox id="supplierSelectType" fx:id="supplierSelectTypedropdown" layoutX="393.0" layoutY="123.0" onAction="#selectType" prefWidth="200.0" promptText="Enter Supplier Type">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <TextField fx:id="supplierAddresstxt" layoutX="615.0" layoutY="122.0" prefWidth="200.0" promptText="Enter Supplier Address" />
+        <TextField id="supplierEmailtxt" fx:id="supplierPhonenumbertxt" layoutX="838.0" layoutY="123.0" prefWidth="200.0" promptText="Enter Supplier Phonenumber" />
+        <TextField id="supplierPhonenumbertxt" fx:id="supplierEmailtxt" layoutX="1066.0" layoutY="122.0" prefWidth="200.0" promptText="Enter Supplier Email" />
+        <Button fx:id="btnAddSupplier" layoutX="1275.0" layoutY="114.0" mnemonicParsing="false" onAction="#addSupplier" prefHeight="32.0" prefWidth="69.0" text="Add" />
+        <Label font="$x2" layoutX="14.0" layoutY="178.0" text="List Of Suppliers" textAlignment="CENTER" />
+        <ListView id="listOffSuppliersView" fx:id="listOfSuppliersView" layoutX="14.0" layoutY="246.0" prefHeight="200.0" prefWidth="1140.0" />
+        <Label font="$x1" layoutX="14.0" layoutY="214.0" text="Name" textAlignment="CENTER" />
+        <Label font="$x1" layoutX="146.0" layoutY="214.0" text="Type" textAlignment="CENTER" />
+        <Label font="$x1" layoutX="263.0" layoutY="214.0" text="Address" textAlignment="CENTER" />
+        <Label font="$x1" layoutX="565.0" layoutY="214.0" text="Email" textAlignment="CENTER" />
+        <Label font="$x1" layoutX="863.0" layoutY="214.0" text="Phonenumber" textAlignment="CENTER" />
+        <Label font="$x2" layoutX="14.0" layoutY="470.0" text="Archive List Of Suppliers" textAlignment="CENTER" />
+        <Label font="$x1" layoutX="14.0" layoutY="506.0" text="Name" textAlignment="CENTER" />
+        <Label font="$x1" layoutX="146.0" layoutY="506.0" text="Type" textAlignment="CENTER" />
+        <Label font="$x1" layoutX="263.0" layoutY="506.0" text="Address" textAlignment="CENTER" />
+        <Label font="$x1" layoutX="565.0" layoutY="506.0" text="Email" textAlignment="CENTER" />
+        <Label font="$x1" layoutX="863.0" layoutY="506.0" text="Phonenumber" textAlignment="CENTER" />
+        <ListView fx:id="listOfArchiveSuppliersView" layoutX="14.0" layoutY="540.0" prefHeight="200.0" prefWidth="1140.0" />
+        <Label font="$x2" layoutX="14.0" layoutY="761.0" text="Search Suppliers" textAlignment="CENTER" />
+        <Button id="searchSuppliersBtn" fx:id="searchSuppliersBtnId" layoutX="14.0" layoutY="799.0" mnemonicParsing="false" onAction="#searchSuppliersBtn" prefHeight="32.0" prefWidth="82.0" text="Search" />
+        <Button id="backToMU" fx:id="backToMUBtn" layoutX="1159.0" layoutY="853.0" mnemonicParsing="false" onAction="#backToMU" prefHeight="32.0" prefWidth="163.0" text="Back to Main Menu" />
+        <Button fx:id="archiveSupplierBtn" layoutX="1166.0" layoutY="246.0" mnemonicParsing="false" onAction="#archiveSupplier" text="Archive " />
+        <Button fx:id="deleteSupplierBtn" layoutX="1266.0" layoutY="246.0" mnemonicParsing="false" onAction="#deleteBtn" text="Delete" />
+        <Button fx:id="supplierResBtn" layoutX="1166.0" layoutY="540.0" mnemonicParsing="false" onAction="#resBtn" text="Restore" />
+        <Label font="$x1" layoutX="18.0" layoutY="90.0" text="Supplier ID" textAlignment="CENTER" />
+        <TextField id="supplierNameID" fx:id="supplierIDtxt" layoutX="18.0" layoutY="122.0" prefWidth="134.0" promptText="Enter Supplier ID" />
+      </children>
+    </AnchorPane>
+  </content>
+</ScrollPane>

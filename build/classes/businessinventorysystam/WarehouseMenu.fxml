@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="510.951171875" prefWidth="535.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.WarehouseMenuController">
+  <children>
+    <Label layoutX="153.0" layoutY="12.0" text="Warehouses">
+      <font>
+        <Font name="System Bold" size="40.0" />
+      </font>
+    </Label>
+    <Button fx:id="essexWBtnID" layoutX="175.0" layoutY="80.0" mnemonicParsing="false" onAction="#essexWBtn" prefHeight="39.0" prefWidth="186.0" text="Essex Warehouse" />
+    <Button fx:id="sussexWBtnID" layoutX="175.0" layoutY="132.0" mnemonicParsing="false" onAction="#sussexWBtn" prefHeight="39.0" prefWidth="186.0" text="Sussex Warehouse" />
+    <Button fx:id="middlesexWBtnID" layoutX="175.0" layoutY="188.0" mnemonicParsing="false" onAction="#middlesexWBtn" prefHeight="39.0" prefWidth="186.0" text="Middlesex Warehouse" />
+    <Button id="hampshireWBtn" fx:id="hampshireWBtnID" layoutX="175.0" layoutY="241.0" mnemonicParsing="false" onAction="#hampshireWBtn" prefHeight="39.0" prefWidth="186.0" text="Hampshire Warehouse" />
+    <Button id="addProductsID" fx:id="addProductsBtnID" layoutX="26.0" layoutY="356.0" mnemonicParsing="false" onAction="#addProductsBtn" prefHeight="39.0" prefWidth="141.0" text="Add Products" />
+    <Button fx:id="archiveProductsBtnID" layoutX="26.0" layoutY="403.0" mnemonicParsing="false" onAction="#archiveProductsBtn" prefHeight="39.0" prefWidth="141.0" text="Archive Products" />
+    <Button fx:id="backBtnID" layoutX="447.0" layoutY="454.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="39.0" prefWidth="74.0" text="Back" />
+  </children>
+</AnchorPane>

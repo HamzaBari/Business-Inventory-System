@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="790.0" prefWidth="756.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.UpdateEmployeesDetailsController">
+  <children>
+    <Label layoutX="157.0" layoutY="14.0" text="Update Employees Details">
+      <font>
+        <Font name="System Bold" size="38.0" />
+      </font>
+    </Label>
+    <TextField fx:id="usernameTxtID" layoutX="32.0" layoutY="111.0" prefWidth="307.0" promptText="E.g., Hamza" />
+    <Label layoutX="32.0" layoutY="83.0" text="Verify Username">
+      <font>
+        <Font name="System Bold" size="15.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField fx:id="passwordTxtID" layoutX="32.0" layoutY="187.0" prefWidth="307.0" promptText="E.g., ********" />
+    <Label font="$x1" layoutX="32.0" layoutY="159.0" text="Verify Password" />
+    <Button fx:id="loadDetailsBtnID" layoutX="32.0" layoutY="236.0" mnemonicParsing="false" onAction="#loadDetailsBtn" text="Load Details" />
+    <Label layoutX="32.0" layoutY="281.0" text="Result:" />
+    <Label id="er" fx:id="errorMsgLbl" layoutX="86.0" layoutY="281.0" prefWidth="519.0" text="" />
+    <Label layoutX="32.0" layoutY="315.0" prefHeight="51.0" prefWidth="497.0" text="Please Edit the details in the input fields below and then, press update to update the new details" wrapText="true" />
+    <TextField fx:id="usernameTxt" layoutX="31.0" layoutY="413.0" prefWidth="233.0" promptText="" />
+    <Label font="$x1" layoutX="31.0" layoutY="385.0" text="Username" />
+    <TextField fx:id="firstnameTxt" layoutX="32.0" layoutY="481.0" prefWidth="233.0" promptText="" />
+    <Label font="$x1" layoutX="32.0" layoutY="453.0" text="Firstname" />
+    <TextField fx:id="lastnameTxt" layoutX="32.0" layoutY="556.0" prefWidth="233.0" promptText="" />
+    <Label font="$x1" layoutX="32.0" layoutY="528.0" text="Lastname" />
+    <TextField fx:id="addressTxt" layoutX="31.0" layoutY="633.0" prefWidth="233.0" promptText="" />
+    <Label font="$x1" layoutX="31.0" layoutY="605.0" text="Address" />
+    <TextField fx:id="postcodeTxt" layoutX="339.0" layoutY="413.0" prefWidth="233.0" promptText="" />
+    <Label font="$x1" layoutX="339.0" layoutY="385.0" text="Postcode" />
+    <TextField fx:id="emailTxt" layoutX="339.0" layoutY="481.0" prefWidth="233.0" promptText="" />
+    <Label font="$x1" layoutX="339.0" layoutY="453.0" text="Email" />
+    <TextField fx:id="phonenumberTxt" layoutX="339.0" layoutY="556.0" prefWidth="233.0" promptText="" />
+    <Label font="$x1" layoutX="339.0" layoutY="528.0" text="Phonenumber" />
+    <TextField fx:id="passwordTxt" layoutX="339.0" layoutY="633.0" prefWidth="233.0" promptText="" />
+    <Label font="$x1" layoutX="339.0" layoutY="605.0" text="Password" />
+    <Button fx:id="updateDetailsBtnID" layoutX="448.0" layoutY="682.0" mnemonicParsing="false" onAction="#updateDetailsBtn" text="Update Details" />
+    <Button fx:id="backBtnID" layoutX="672.0" layoutY="741.0" mnemonicParsing="false" onAction="#backBtn" text="Back" />
+    <Label layoutX="339.0" layoutY="721.0" prefWidth="233.0" text="" />
+  </children>
+</AnchorPane>
