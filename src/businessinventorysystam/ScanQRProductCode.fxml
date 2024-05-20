@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="568.0" prefWidth="334.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.ScanQRProductCodeController">
+  <children>
+    <Button fx:id="scanButtonID" layoutX="139.0" layoutY="271.0" mnemonicParsing="false" onAction="#scanBtn" text="Scan" />
+    <Label layoutX="126.0" layoutY="14.0" text="Webcam">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Button fx:id="exitBtnID" layoutX="222.0" layoutY="516.0" mnemonicParsing="false" onAction="#exitBtn" prefHeight="38.0" prefWidth="98.0" text="Exit" />
+    <ProgressIndicator fx:id="loadID" layoutX="139.0" layoutY="345.0" onDragDetected="#load" prefHeight="56.0" prefWidth="57.0" progress="0.0" />
+    <Label fx:id="resultID" font="$x1" layoutX="93.0" layoutY="408.0" prefWidth="150.0" text="" />
+    <Label fx:id="lodingLBL" layoutX="127.0" layoutY="308.0" prefWidth="83.0" text="Waiting...">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <BorderPane fx:id="CameraPane" layoutX="69.0" layoutY="53.0" prefHeight="200.0" prefWidth="200.0" />
+  </children>
+</AnchorPane>

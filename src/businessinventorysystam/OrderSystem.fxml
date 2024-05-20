@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="paneLayout" prefHeight="996.0" prefWidth="1228.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.OrderSystemController">
+  <children>
+    <Label layoutX="481.0" layoutY="14.0" text="Order System">
+      <font>
+        <Font name="System Bold" size="24.0" />
+      </font>
+    </Label>
+    <Label layoutX="35.0" layoutY="71.0" text="Product ID">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="35.0" layoutY="164.0" text="Product Name" />
+    <Label font="$x1" layoutX="35.0" layoutY="249.0" text="Product Per Price" />
+    <Label font="$x1" layoutX="35.0" layoutY="332.0" text="Product Qty" />
+    <Label font="$x1" layoutX="35.0" layoutY="416.0" text="Total Price" />
+    <TextField fx:id="productPerPricetxt" layoutX="35.0" layoutY="281.0" prefWidth="72.0" promptText="e.g. £8" text="" />
+    <TextField fx:id="productQtyID" layoutX="35.0" layoutY="364.0" prefWidth="95.0" promptText="e.g. 5" text="" />
+    <TextField fx:id="totalPriceID" layoutX="35.0" layoutY="448.0" prefWidth="72.0" promptText="e.g. £40" text="" />
+    <Label layoutX="35.0" layoutY="505.0" prefHeight="90.0" prefWidth="261.0" text="Click on scan QR code to scan the product code which will automaticlly enter the product details for you without you, manually selecting them." wrapText="true">
+      <font>
+        <Font size="15.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Button fx:id="scanQRCodeID" layoutX="35.0" layoutY="595.0" mnemonicParsing="false" onAction="#scanQRCode" text="Scan QR Code" />
+    <Label font="$x1" layoutX="390.0" layoutY="71.0" text="Product Description" />
+    <Label font="$x1" layoutX="387.0" layoutY="199.0" text="Product Status" />
+    <TextField fx:id="productStatusIDtxt" layoutX="387.0" layoutY="236.0" prefWidth="72.0" promptText="e.g. yes" text="" />
+    <Label font="$x1" layoutX="387.0" layoutY="281.0" text="Product Qty Avaliability" />
+    <TextField id="productQtyID" fx:id="productQtyAvaID" layoutX="387.0" layoutY="319.0" prefWidth="72.0" promptText="e.g., 12" text="" />
+    <Label font="$x1" layoutX="384.0" layoutY="368.0" text="Supplier ID" />
+    <ComboBox fx:id="supplierTypeID" layoutX="384.0" layoutY="403.0" onAction="#supplierType" prefHeight="27.0" prefWidth="224.0" promptText="Select Supplier ID">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label font="$x1" layoutX="659.0" layoutY="71.0" text="Data Ordered On -" />
+    <Label fx:id="lblDeliveryDate" font="$x1" layoutX="659.0" layoutY="107.0" prefWidth="389.0" text="" />
+    <Label font="$x1" layoutX="658.0" layoutY="164.0" text="Expected Delivery Date" />
+    <Label font="$x1" layoutX="659.0" layoutY="281.0" text="Delivery Address" />
+    <TextField fx:id="deliveryAddressTxt" layoutX="659.0" layoutY="319.0" prefWidth="353.0" promptText="Enter Delivery Address e.g., 100 Spirngfield Drive" text="" />
+    <Label font="$x1" layoutX="658.0" layoutY="376.0" text="Post Code" />
+    <TextField fx:id="postCodeTxt" layoutX="658.0" layoutY="414.0" prefWidth="303.0" promptText="e.g., IG2 5TY" text="" />
+    <Label font="$x1" layoutX="659.0" layoutY="474.0" text="Payment" />
+    <Label layoutX="658.0" layoutY="510.0" text="Select if you wish to take payment from business account or other account ">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </Label>
+    <RadioButton fx:id="businessPaymentID" layoutX="658.0" layoutY="540.0" mnemonicParsing="false" onAction="#businessPayment" text="Payment from Business Budget" />
+    <RadioButton fx:id="othersPaymentID" layoutX="658.0" layoutY="575.0" mnemonicParsing="false" onAction="#othersPayment" text="Payment from other account if yes please enter the details below:" />
+    <Label font="$x1" layoutX="658.0" layoutY="622.0" text="Card Issue Number" />
+    <TextField fx:id="cardNoTxt" layoutX="659.0" layoutY="657.0" prefWidth="303.0" promptText="Enter your Card Number Here" text="" />
+    <Label font="$x1" layoutX="653.0" layoutY="704.0" text="Card Issue Date" />
+    <Label font="$x1" layoutX="1013.0" layoutY="622.0" text="Card Security No:" />
+    <TextField fx:id="securityNoTxt" layoutX="1013.0" layoutY="656.0" prefWidth="126.0" promptText="e.g. 0000" text="" />
+    <Label font="$x1" layoutX="993.0" layoutY="704.0" text="Card Expiry Date" />
+    <Button fx:id="sendOrderBtn" layoutX="993.0" layoutY="791.0" mnemonicParsing="false" onAction="#sendOrder" text="Send Order" />
+    <Button fx:id="mainMenuBtn" layoutX="1104.0" layoutY="867.0" mnemonicParsing="false" onAction="#mainMenuBtn" prefWidth="95.0" text="Back" />
+    <Label id="lbl" fx:id="lblOrderRes" layoutX="742.0" layoutY="830.0" prefWidth="353.0" text="" />
+    <Label font="$x1" layoutX="382.0" layoutY="457.0" text="Supplier Name" />
+    <ComboBox fx:id="supplierNameID" layoutX="382.0" layoutY="492.0" onAction="#supplierName" prefHeight="27.0" prefWidth="224.0" promptText="Select Supplier Name">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <TextField id="deliveryAddressTxt" fx:id="productTypeNameID" layoutX="37.0" layoutY="199.0" prefWidth="239.0" promptText="Type Product Name" text="" />
+    <TextArea fx:id="productDescription" layoutX="392.0" layoutY="98.0" prefHeight="90.0" prefWidth="242.0" wrapText="true" />
+    <TextField id="deliveryAddressTxt" fx:id="addProductID" layoutX="35.0" layoutY="98.0" prefWidth="239.0" promptText="Type Product ID" text="" />
+    <Label font="$x1" layoutX="981.0" layoutY="66.0" text="Select ID" />
+    <ComboBox id="supplierTypeID" fx:id="selectID" layoutX="981.0" layoutY="94.0" prefHeight="27.0" prefWidth="224.0" promptText="Select ID">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+  </children>
+</AnchorPane>
