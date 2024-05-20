@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="683.0" prefWidth="740.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.AddProductsToWarehousesController">
+  <children>
+    <Label layoutX="49.0" layoutY="14.0" text="Add Products to Warehouses ">
+      <font>
+        <Font name="System Bold" size="45.0" />
+      </font>
+    </Label>
+    <Label layoutX="49.0" layoutY="110.0" text="Product Name">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="49.0" layoutY="208.0" text="Select Warehouse Location" />
+    <Label font="$x1" layoutX="49.0" layoutY="304.0" text="Select Shelf from A - H" />
+    <Label font="$x1" layoutX="49.0" layoutY="396.0" text="Select Shelf Number Row" />
+    <Label font="$x1" layoutX="49.0" layoutY="491.0" text="Product Quantity" />
+    <TextField fx:id="productQtyTxt" layoutX="49.0" layoutY="527.0" prefWidth="270.0" promptText="Enter Product Quantity" />
+    <ComboBox id="warehouseLocationCB" fx:id="warehouseLocationID" layoutX="49.0" layoutY="243.0" onAction="#warehouseLocationCB" prefWidth="298.0" promptText="Select the Warehouse Location">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox id="SelectShelfCB" fx:id="SelectShelfID" layoutX="49.0" layoutY="342.0" onAction="#SelectShelfCB" prefWidth="298.0" promptText="Select Shelf e.g., A - H">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="SelectShelfNoID" layoutX="49.0" layoutY="431.0" onAction="#SelectShelfNoCB" prefWidth="298.0" promptText="Select Shelf No e.g., 3">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Button fx:id="addProductID" layoutX="49.0" layoutY="588.0" mnemonicParsing="false" onAction="#addProductBtn" text="Add" />
+    <Button fx:id="archiveProductLID" layoutX="501.0" layoutY="631.0" mnemonicParsing="false" onAction="#archiveProductBtn" text="Archive Product List" />
+    <Button fx:id="backBtnID" layoutX="669.0" layoutY="631.0" mnemonicParsing="false" onAction="#backBtn" text="Back" />
+    <ComboBox id="warehouseLocationCB" fx:id="warehouseProductNameCB" layoutX="49.0" layoutY="137.0" prefWidth="298.0" promptText="Select the Product Name">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+  </children>
+</AnchorPane>

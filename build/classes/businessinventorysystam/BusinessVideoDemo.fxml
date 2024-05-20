@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-background-color 0xff007aff?>
+
+<ScrollPane prefHeight="709.0000999999975" prefWidth="825.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.BusinessVideoDemoController">
+  <content>
+    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="777.0" prefWidth="816.0">
+      <children>
+        <Label layoutX="247.0" layoutY="14.0" text="Business DRP Video Demo">
+          <font>
+            <Font name="System Bold" size="26.0" />
+          </font>
+        </Label>
+        <Pane layoutX="107.0" layoutY="358.0" prefHeight="55.0" prefWidth="608.0">
+          <children>
+            <Button fx:id="playPauseBtn" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="56.0" text="|&gt;" />
+            <Slider fx:id="videoSlider" layoutX="89.0" layoutY="20.0" prefWidth="406.0" />
+            <Button fx:id="fullscreenBtnID" layoutX="552.0" layoutY="10.0" mnemonicParsing="false" onAction="#fullscreenID" prefHeight="43.0" prefWidth="56.0" text="[  ]" />
+            <Button id="muteBtnID" fx:id="soundBtnID" layoutX="495.0" layoutY="10.0" mnemonicParsing="false" onAction="#soundBtn" prefHeight="43.0" prefWidth="56.0" text="Mute">
+              <font>
+                <Font size="11.0" />
+              </font>
+            </Button>
+          </children>
+          <effect>
+            <ColorAdjust />
+          </effect>
+        </Pane>
+        <Pane fx:id="videoPane" layoutX="107.0" layoutY="76.0" prefHeight="282.0" prefWidth="608.0" />
+        <Pane layoutX="121.0" layoutY="422.0" prefHeight="55.000099999997474" prefWidth="594.0">
+          <children>
+            <Button fx:id="previousBtnID" layoutX="332.0" layoutY="7.0" mnemonicParsing="false" onAction="#previousBtn" prefHeight="43.0" prefWidth="140.0" text="Previous &lt;&lt;&lt;|" />
+            <Button fx:id="nextBtnID" layoutX="120.0" layoutY="7.0" mnemonicParsing="false" onAction="#nextBtn" prefHeight="43.0" prefWidth="140.0" text="Next |&gt;&gt;&gt;" />
+          </children>
+        </Pane>
+        <Label layoutX="177.0" layoutY="493.0" text="Name &amp; Number of the Video Playing about e.g., 1 re-establish onsite location " />
+        <Label layoutX="334.0" layoutY="548.0" text="Lists of Videos in order:" />
+        <TextArea fx:id="videosListTtxt" layoutX="341.0" layoutY="578.0" prefHeight="146.0" prefWidth="148.0" wrapText="true" />
+        <Button fx:id="backBtnID" layoutX="727.0" layoutY="697.0" mnemonicParsing="false" onAction="#backBtn" text="Back" />
+        <Label fx:id="nameNumberOfVideoLbl" layoutX="177.0" layoutY="517.0" prefHeight="123.0" prefWidth="112.0" text="" />
+      </children>
+    </AnchorPane>
+  </content>
+</ScrollPane>

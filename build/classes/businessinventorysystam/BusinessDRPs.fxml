@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="346.999977929685" prefWidth="404.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.BusinessDRPsController">
+  <children>
+    <Label layoutX="101.0" layoutY="14.0" text="Business/DRP Plans">
+      <font>
+        <Font name="System Bold" size="22.0" />
+      </font>
+    </Label>
+    <Button fx:id="documentBtnID" layoutX="75.0" layoutY="80.0" mnemonicParsing="false" onAction="#documentBtn" prefHeight="52.0" prefWidth="255.0" text="Business/DRP Plans Document" />
+    <Button fx:id="videoBtnID" layoutX="75.0" layoutY="161.0" mnemonicParsing="false" onAction="#videoBtn" prefHeight="52.0" prefWidth="255.0" text="Business/DRP Plans Video Demo" />
+    <Button fx:id="backBtnID" layoutX="279.0" layoutY="265.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="52.0" prefWidth="102.0" text="Back" />
+  </children>
+</AnchorPane>

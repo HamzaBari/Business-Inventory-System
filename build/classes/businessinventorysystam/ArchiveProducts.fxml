@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="718.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.ArchiveProductsController">
+  <children>
+    <Label layoutX="222.0" layoutY="14.0" text="Archive Product List">
+      <font>
+        <Font name="System Bold" size="29.0" />
+      </font>
+    </Label>
+    <Button fx:id="backBtnID" layoutX="633.0" layoutY="443.0" mnemonicParsing="false" onAction="#backBtn" text="Back" />
+    <TableView fx:id="archiveTbl" layoutX="74.0" layoutY="82.0" minHeight="24.0" prefHeight="24.0" prefWidth="573.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="288.0" text="Product Name" fx:id="productNameCol" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="285.0" text="Product Qty" fx:id="productQryCol" />
+      </columns>
+    </TableView>
+    <Label layoutX="74.0" layoutY="359.0" text="Click Here to Search Product &amp; Restore">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Label>
+    <Button fx:id="searchBtnID" layoutX="74.0" layoutY="392.0" mnemonicParsing="false" onAction="#searchBtn" prefWidth="89.0" text="Search" />
+    <ListView fx:id="archiveList" layoutX="74.0" layoutY="106.0" prefHeight="223.0" prefWidth="573.0" />
+  </children>
+</AnchorPane>
