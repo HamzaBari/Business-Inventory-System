@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="502.0" prefWidth="727.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.MainMenuController">
+  <children>
+    <Label layoutX="300.0" layoutY="27.0" text="Main Menu">
+      <font>
+        <Font name="Calibri Bold" size="26.0" />
+      </font>
+    </Label>
+    <Button id="suppliersBtn" fx:id="suppliersBtnId" layoutX="207.0" layoutY="75.0" mnemonicParsing="false" onAction="#suppliersBtn" prefHeight="50.0" prefWidth="114.0" text="Suppliers" textAlignment="LEFT" textOverrun="ELLIPSIS">
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button id="ordersBtn" fx:id="ordersBtnId" font="$x1" layoutX="207.0" layoutY="144.0" mnemonicParsing="false" onAction="#ordersBtn" prefHeight="50.0" prefWidth="114.0" text="Orders" textAlignment="LEFT" textOverrun="ELLIPSIS" />
+    <Button id="warehousesBtn" fx:id="warehousesBtnId" layoutX="207.0" layoutY="208.0" mnemonicParsing="false" onAction="#warehousesBtn" prefHeight="50.000099999997474" prefWidth="113.9998779296875" text="Warehouses" textAlignment="LEFT" textOverrun="ELLIPSIS">
+      <font>
+        <Font name="System Bold" size="15.2" />
+      </font>
+    </Button>
+    <Button id="employeesBtn" fx:id="employeesBtnId" layoutX="207.0" layoutY="277.0" mnemonicParsing="false" onAction="#employeesBtn" prefHeight="50.0" prefWidth="114.0" text="Employees" textAlignment="LEFT" textOverrun="ELLIPSIS">
+      <font>
+        <Font name="System Bold" size="16.0" fx:id="x2" />
+      </font>
+    </Button>
+    <Button id="jobsBtn" fx:id="jobsBtnId" font="$x1" layoutX="207.0" layoutY="344.0" mnemonicParsing="false" onAction="#jobsBtn" prefHeight="50.0" prefWidth="114.0" text="Jobs" textAlignment="LEFT" textOverrun="ELLIPSIS" />
+    <Button id="onsiteBrn" fx:id="onsiteBtnId" layoutX="363.0" layoutY="75.0" mnemonicParsing="false" onAction="#onsiteBtn" prefHeight="50.0" prefWidth="114.0" text="OnSite(Shop)" textAlignment="LEFT" textOverrun="ELLIPSIS">
+      <font>
+        <Font name="System Bold" size="14.0" />
+      </font>
+    </Button>
+    <Button id="orderslistBtn" fx:id="orderslistBtnId" layoutX="363.0" layoutY="144.0" mnemonicParsing="false" onAction="#orderslistBtn" prefHeight="50.0" prefWidth="114.0" text="Orders List" textAlignment="LEFT" textOverrun="ELLIPSIS">
+      <font>
+        <Font name="System Bold" size="17.0" />
+      </font>
+    </Button>
+    <Button id="business_drpBtn" fx:id="business_drpBtnId" font="$x1" layoutX="363.0" layoutY="208.0" mnemonicParsing="false" onAction="#business_drpBtn" prefHeight="51.0" prefWidth="262.0" text="Business/Disaster Recovery" textAlignment="LEFT" textOverrun="ELLIPSIS" />
+    <Button id="financeBtn" fx:id="financeBtnId" font="$x1" layoutX="363.0" layoutY="277.0" mnemonicParsing="false" onAction="#financeBtn" prefHeight="50.0" prefWidth="114.0" text="Finance" textAlignment="LEFT" textOverrun="ELLIPSIS" />
+    <Button id="helpGuideBtn" fx:id="helpGuideBtnId" font="$x2" layoutX="363.0" layoutY="344.0" mnemonicParsing="false" onAction="#helpGuideBtn" prefHeight="50.0" prefWidth="114.0" text="Help Guide" textAlignment="LEFT" textOverrun="ELLIPSIS" />
+    <Button id="logoutBtn" fx:id="logoutBtnId" font="$x1" layoutX="591.0" layoutY="438.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="50.0" prefWidth="114.0" text="Logout" textAlignment="LEFT" textOverrun="ELLIPSIS" />
+    <Label fx:id="lblLoggedInUsr" layoutX="507.0" layoutY="8.0" prefHeight="24.0" prefWidth="220.0" text="The name of the user LoggedIn." />
+  </children>
+</AnchorPane>
