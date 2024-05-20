@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" disable="false" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="false" opacity="1.0" prefHeight="581.8284301757812" prefWidth="938.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.UserAuthenticationController">
+  <children>
+    <Label id="label" fx:id="LblErrFirstname" layoutX="14.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <Pane id="" layoutX="0.0" layoutY="0.0" prefHeight="37.0" prefWidth="936.9999000000025" snapToPixel="true" style="-fx-background-color: #99ccff&#10;&#10;">
+      <children>
+        <Label layoutX="14.0" layoutY="9.0" prefWidth="98.0" text="Registration">
+          <font>
+            <Font size="15.0" />
+          </font>
+        </Label>
+        <Label layoutX="595.0" layoutY="9.0" prefWidth="48.5" text="Login" />
+      </children>
+    </Pane>
+    <Label layoutX="14.0" layoutY="55.0" prefHeight="29.0" prefWidth="137.0" text="Enter Firstname">
+      <font>
+        <Font name="System Bold" size="17.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField fx:id="txtFirstname" layoutX="14.0" layoutY="84.0" prefHeight="29.0" prefWidth="223.0" promptText="Enter Firstname" />
+    <Label layoutX="14.0" layoutY="120.0" text="" />
+    <Label id="label" fx:id="LblErrAddress" layoutX="14.0" layoutY="210.0" minHeight="16.0" minWidth="69.0" />
+    <Label font="$x1" layoutX="14.0" layoutY="145.0" prefHeight="29.0" prefWidth="137.0" text="Enter Address" />
+    <TextField fx:id="txtAddress" layoutX="14.0" layoutY="174.0" prefHeight="29.0" prefWidth="223.0" promptText="Enter Address" />
+    <Label id="label" fx:id="LblErrPhonenumber" layoutX="14.0" layoutY="301.0" minHeight="16.0" minWidth="69.0" />
+    <Label font="$x1" layoutX="14.0" layoutY="236.0" prefHeight="29.0" prefWidth="190.0" text="Enter Phonenumber" />
+    <TextField fx:id="txtPhonenumber" layoutX="14.0" layoutY="265.0" prefHeight="29.0" prefWidth="223.0" promptText="Enter Phonenumber" />
+    <Label id="label" fx:id="LblErrSetUsername" layoutX="18.0" layoutY="386.0" minHeight="16.0" minWidth="69.0" />
+    <Label font="$x1" layoutX="18.0" layoutY="321.0" prefHeight="29.0" prefWidth="137.0" text="Set Username" />
+    <TextField fx:id="txtSetUsername" layoutX="18.0" layoutY="350.0" prefHeight="29.0" prefWidth="223.0" promptText="Set Username" />
+    <Label id="label" fx:id="LblErrLastname" layoutX="330.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <Label font="$x1" layoutX="330.0" layoutY="55.0" prefHeight="29.0" prefWidth="137.0" text="Enter Lastname" />
+    <TextField fx:id="txtLastname" layoutX="330.0" layoutY="84.0" prefHeight="29.0" prefWidth="223.0" promptText="Enter Lastname" />
+    <Label layoutX="330.0" layoutY="120.0" text="" />
+    <Label id="label" fx:id="LblErrPostcode" layoutX="330.0" layoutY="210.0" minHeight="16.0" minWidth="69.0" />
+    <Label font="$x1" layoutX="330.0" layoutY="145.0" prefHeight="29.0" prefWidth="137.0" text="Enter Postcode" />
+    <TextField fx:id="txtPostcode" layoutX="330.0" layoutY="174.0" prefHeight="29.0" prefWidth="223.0" promptText="Enter Postcode" />
+    <Label id="label" fx:id="LblErrEmail" layoutX="330.0" layoutY="301.0" minHeight="16.0" minWidth="69.0" />
+    <Label font="$x1" layoutX="330.0" layoutY="236.0" prefHeight="29.0" prefWidth="190.0" text="Enter Email" />
+    <TextField fx:id="txtEmail" layoutX="330.0" layoutY="265.0" prefHeight="29.0" prefWidth="223.0" promptText="Enter Email" />
+    <Label id="label" fx:id="LblErrSetPassword" layoutX="334.0" layoutY="386.0" minHeight="16.0" minWidth="69.0" />
+    <Label font="$x1" layoutX="334.0" layoutY="321.0" prefHeight="29.0" prefWidth="137.0" text="Set Password" />
+    <Button layoutX="419.0" layoutY="411.0" mnemonicParsing="false" onAction="#clickRegister" prefHeight="59.0" prefWidth="146.0" text="Register">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x2" />
+      </font>
+    </Button>
+    <Label id="label" fx:id="lblSuccessOrErrorMsgReg" layoutX="227.0" layoutY="476.0" minHeight="16.0" minWidth="69.0" prefWidth="343.0" />
+    <Label font="$x1" layoutX="672.0" layoutY="130.0" prefHeight="29.0" prefWidth="137.0" text="Enter Username" />
+    <TextField fx:id="txtEnterUsername" layoutX="672.0" layoutY="159.0" prefHeight="29.0" prefWidth="223.0" promptText="Enter Username" />
+    <Label font="$x1" layoutX="672.0" layoutY="257.0" prefHeight="29.0" prefWidth="137.0" text="Enter Password" />
+    <Button font="$x2" layoutX="775.0" layoutY="422.0" mnemonicParsing="false" onAction="#clickLogin" prefHeight="59.0" prefWidth="146.0" text="Login" />
+    <Label id="label" fx:id="lblSuccessOrErrorMsgLgn" layoutX="630.0" layoutY="342.0" minHeight="16.0" minWidth="69.0" prefHeight="37.0" prefWidth="290.5" />
+    <Line endX="832.0" endY="-1.0" layoutX="103.0" layoutY="39.0" startX="-100.0" strokeWidth="4.0" />
+    <Line endX="-45.0" endY="-356.0" layoutX="630.0" layoutY="356.0" startX="-45.0" startY="223.0" strokeWidth="4.0" />
+    <PasswordField fx:id="txtSetPassword" layoutX="334.0" layoutY="350.0" prefHeight="29.0" prefWidth="223.0" promptText="Set Password" text="" />
+    <PasswordField id="txtSetPassword" fx:id="txtEnterPassword" layoutX="672.0" layoutY="286.0" prefHeight="29.0" prefWidth="223.0" promptText="Enter Password" text="" />
+    <Label id="label" layoutX="17.0" layoutY="486.0" minHeight="16.0" minWidth="69.0" />
+    <Label font="$x1" layoutX="17.0" layoutY="407.0" prefHeight="29.0" prefWidth="199.0" text="Set Owner/Employee ID" />
+    <TextField id="txtSetUsername" fx:id="txtOwnerID" layoutX="17.0" layoutY="436.0" onAction="#txtOwner" prefHeight="29.0" prefWidth="223.0" promptText="Set OwnerID" />
+    <Label id="label" fx:id="lblErrOwnerID" layoutX="15.0" layoutY="470.0" minHeight="16.0" minWidth="69.0" />
+    <Label id="label" fx:id="lblLoginSuccess" layoutX="630.0" layoutY="378.0" minHeight="16.0" minWidth="69.0" prefHeight="37.0" prefWidth="290.5" />
+  </children>
+</AnchorPane>

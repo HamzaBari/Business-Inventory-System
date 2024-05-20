@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane prefHeight="422.0" prefWidth="1403.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="businessinventorysystam.ViewEmployeesListController">
+  <content>
+    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="422.0" prefWidth="1477.0">
+      <children>
+        <Label layoutX="549.0" layoutY="14.0" text="View Employees List">
+          <font>
+            <Font name="System Bold" size="20.0" />
+          </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="44.0" prefHeight="69.0" prefWidth="1077.0" text="This is where you can view a list of employees who are working in this business. You can view their perosnal and job details. There is an option to search and delete the employee by their name or ID. This way you can remove the employee from the system e.g., if the employee has left the company. " textAlignment="CENTER" wrapText="true">
+          <font>
+            <Font size="16.0" />
+          </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="128.0" text="List Of Employees">
+          <font>
+            <Font name="System Bold" size="18.0" />
+          </font>
+        </Label>
+        <ListView fx:id="employeeList" layoutX="32.0" layoutY="185.0" prefHeight="200.0" prefWidth="1333.0" />
+        <Label layoutX="32.0" layoutY="163.0" text="Username">
+          <font>
+            <Font name="System Bold" size="16.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="201.0" layoutY="163.0" text="Firstname" />
+        <Label font="$x1" layoutX="358.0" layoutY="163.0" text="Lastname" />
+        <Label font="$x1" layoutX="488.0" layoutY="163.0" text="Address" />
+        <Label font="$x1" layoutX="616.0" layoutY="163.0" text="Postcode" />
+        <Label font="$x1" layoutX="749.0" layoutY="163.0" text="Phonenumber" />
+        <Label font="$x1" layoutX="929.0" layoutY="163.0" text="Email" />
+        <Label font="$x1" layoutX="1104.0" layoutY="163.0" text="Job Title" />
+        <Label font="$x1" layoutX="1253.0" layoutY="163.0" text="Monthly Wage" />
+        <Button fx:id="deleteBtnID" layoutX="1169.0" layoutY="14.0" mnemonicParsing="false" onAction="#deleteBtn" prefHeight="50.0" prefWidth="99.0" text="Delete" />
+        <Button fx:id="backBtnID" layoutX="1279.0" layoutY="14.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="50.0" prefWidth="99.0" text="Back" />
+      </children>
+    </AnchorPane>
+  </content>
+</ScrollPane>
